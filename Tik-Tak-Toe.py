@@ -26,8 +26,13 @@ def UpdateBoard(typeChar,pos):
     DrawBoard()
 
 def UserInput():
-    chara, pos = input("Enter a value from 1-9: ").split() 
-    chara = chara.upper()
+    while(1)
+        chara, pos = input("Enter a value from 1-9: ").split() 
+        chara = chara.upper()
+        if chara!='X' or chara!='O':
+            print("Invalid character entered, try again - X or O")
+        else 
+            break
     print("Charachter: ", chara)
     print("Columns number: ", pos) 
     print() 
